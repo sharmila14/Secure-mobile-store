@@ -1,0 +1,349 @@
+@font-face {
+  font-family: Light-Font;
+  src: url('../fonts/ProximaNova-Light.otf');
+}
+
+@font-face {
+  font-family: Bold-Font;
+  src: url('../fonts/ProximaNova-Bold.otf');
+}
+
+@font-face {
+  font-family: Semibold-Font;
+  src: url('../fonts/ProximaNova-Semibold.otf');
+}
+
+html {
+  margin: 0;
+  background: url('../images/userHome.jpg') no-repeat center center;
+  min-height: 100%;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 10px;
+}
+
+.banner {
+  height: 80px;
+  position: relative;
+}
+
+#prefloc > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#prefloc > a:hover {
+  cursor: pointer;
+}
+
+#applogo label{
+  font-family: Light-Font;
+  position: absolute;
+  float: left;
+  left: 18%;
+  bottom: 13%;
+}
+
+#applogo a:hover{
+  cursor: pointer;
+}
+
+#navbar {
+  font-family: Light-Font;
+  position: absolute;
+  float: right;
+  right: 0;
+  bottom: 13%;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 25px;
+}
+
+#navbar a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#navbar a:nth-child(6) {
+  margin-right: 15px;
+}
+
+#navbar a:nth-child(7) {
+  border: 1px solid #BF9B41;
+  margin-right: 15px;
+}
+
+#navbar a:nth-child(7):hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#navbar a:last-child {
+  border: 1px solid #BF9B41;
+  background-color: #BF9B41;
+  margin-right: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  right: 0px;
+  left: 0px;
+  line-height: 30px;
+  vertical-align: middle;
+  margin: 0px 5px 5px 5px;
+}
+
+.footer div {
+  color: #FFFFFF;
+  font-family: Light-Font;
+  font-size: 13px;
+  text-align: center;
+}
+
+.main {
+    position: relative;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    overflow: scroll;
+    right: 0px;
+    left: 0px;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.35);
+    margin: 30px 30px;
+}
+
+.main #inner {
+  position: relative;
+  font-family: Light-Font;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-left: 30px;
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  margin-right: 30px;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#content5 table {
+  border-collapse: collapse;
+  font-family: Light-Font;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#inner > span {
+  font-size: 30px;
+}
+
+#inner h2 {
+  font-family: Bold-Font;
+  font-size: 35px;
+  color: #FFFFFF;
+  margin: 20px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  padding: 30px 25px;
+}
+
+label {
+  font-family: Light-Font;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+
+/* For Modal Popup */
+.modalDialog {
+    position: fixed;
+    font-family: Semibold-Font;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 550ms ease-in;
+    -moz-transition: opacity 550ms ease-in;
+    transition: opacity 550ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity: 0.95;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 2px;
+    background: #fff;
+    /*background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#090C07, #0E140B);*/
+    background: -webkit-linear-gradient(top, #edf3f9, #fff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(top, #edf3f9, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #BF9B41;
+}
+
+tr:not(:last-child) th:not(:last-child) {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+tr:not(:last-child) td:not(:last-child) {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+tr:last-child {
+  border: none;
+}
+
+th {
+  /*text-decoration: underline;*/
+  font-family: Light-Font;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+td {
+  font-family: Light-Font;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+a > input[type=submit] {
+  background: none;
+  border: none;
+  border: 1px solid #ffffff;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: Light-Font;
+  border-radius: 2px;
+  padding: 12px 10px;
+  outline: none;
+  margin: 0 auto;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#editscores h3 {
+  color: #000000;
+  font-size: 35px;
+  font-family: Bold-Font;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+#editscores label {
+  color: #000000;
+  font-family: Semibold-Font;
+  font-size: 20px;
+}
+
+#editscores input[readonly] {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  font-family: Light-Font;
+}
+
+#editscores input {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 15px;
+  border: 1px solid #000;
+  padding: 5px 5px;
+  color: #000;
+}
+
+#editscores input[type=submit] {
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+
+.other {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 5px 5px;
+  font-family: Light-Font;
+  font-size: 15px;
+  color: #000;
+  border: 1px solid #000;
+}
+
+#msg {
+  text-align: center;
+}
+
+#msg h3 {
+  font-family: Bold-Font;
+  color: #000000;
+  font-size: 30px;
+}
+
+#msg p {
+  font-family: Light-Font;
+  color: #000000;
+  font-size: 16px;
+}

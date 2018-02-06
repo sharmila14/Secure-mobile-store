@@ -1,0 +1,39 @@
+.main2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    left: 0px;
+    height: 80vh;
+}
+
+.main2 #inner2 {
+  position: relative;
+  font-family: Bold-Font;
+  font-size: 38px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#inner2 a {
+    text-decoration: none;
+}
+
+#inner2 a {
+      background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#inner2 a:hover {
+  cursor: pointer;
+  background-color: rgba(85, 85, 85, 0.0);
+  border: 0px;
+
+}

@@ -1,0 +1,11 @@
+#error {
+  color: red;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#success {
+  color: green;
+  text-align: center;
+  margin-top: 40px;
+}

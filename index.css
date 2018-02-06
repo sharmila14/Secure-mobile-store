@@ -1,0 +1,171 @@
+@font-face {
+  font-family: Light-Font;
+  src: url('./fonts/ProximaNova-Light.otf');
+}
+
+@font-face {
+  font-family: Bold-Font;
+  src: url('./fonts/ProximaNova-Bold.otf');
+}
+
+html {
+  margin: 0;
+  background: url('./images/slider/Guest.png') no-repeat center center;
+  min-height: 100%;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 10px;
+}
+
+.banner {
+  height: 80px;
+  position: relative;
+}
+
+#applogo {
+  display: block;
+  max-width: 100%;
+  height: 80px;
+  float: left;
+}
+
+#navbar {
+  font-family: Light-Font;
+  position: absolute;
+  float: right;
+  right: 0;
+  bottom: 13%;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 25px;
+}
+
+#navbar a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#navbar a:nth-child(2) {
+  margin-right: 20px;
+}
+
+
+#navbar a:nth-child(3) {
+  border: 1px solid #BF9B41;
+  margin-right: 20px;
+}
+
+#navbar a:last-child {
+  border: 1px solid #BF9B41;
+  background-color: #BF9B41;
+  margin-right: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  right: 0px;
+  left: 0px;
+  line-height: 30px;
+  vertical-align: middle;
+  margin: 0px 5px 5px 5px;
+}
+
+.footer div {
+  color: #FFFFFF;
+  font-family: Light-Font;
+  font-size: 13px;
+  text-align: center;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    left: 0px;
+    height: 80vh;
+}
+
+.main #inner {
+  position: relative;
+  font-family: Bold-Font;
+  font-size: 38px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#inner a {
+    text-decoration: none;
+}
+
+#inner a {
+  margin: 0px 0px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #BF9B41;
+  padding: 20px 30px;
+  font-size: 75px;
+}
+
+#inner a:hover {
+  cursor: pointer;
+  background-color: rgba(85, 85, 85, 0.0);
+  border: 0px;
+
+}
+
+.main2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    left: 0px;
+    height: 80vh;
+}
+
+.main2 #inner2 {
+  position: relative;
+  font-family: Bold-Font;
+  font-size: 38px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#inner2 a {
+    text-decoration: none;
+}
+
+#inner2 a {
+  margin: 0px 0px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #00000000;
+  padding: 20px 30px;
+  font-size: 75px;
+}
+
+#inner2 a:hover {
+  cursor: pointer;
+  background-color: rgba(85, 85, 85, 0.0);
+  border: 0px;
+
+}
